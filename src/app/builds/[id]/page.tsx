@@ -3,8 +3,14 @@ import Link from 'next/link';
 import { builds, getBuildById, getItemById } from '@/lib/data';
 import ItemCard from '@/components/ItemCard';
 
+// Pre-generate only the most recent / popular builds at build time.
+// Others are rendered on-demand (Incremental Static Regeneration).
+export const dynamicParams = true;
+
 export function generateStaticParams() {
-  return builds.map(b => ({ id: b.id }));
+  // Only pre-render the 200 newest builds — keeps build fast and
+  // serverless function bundle small. Others render on first request.
+  return builds.slice(0, 200).map(b => ({ id: b.id }));
 }
 
 export default async function BuildPage({ params }: { params: Promise<{ id: string }> }) {
