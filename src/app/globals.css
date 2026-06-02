@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0e0d12;
+  --bg-soft: #1a1923;
+  --bg-card: #22202d;
+  --border: #2f2d3d;
+  --text: #e8e6f0;
+  --text-dim: #9a96ad;
+  --accent: #e0b87b;
+}
+
+html, body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Noto Sans SC', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+* { box-sizing: border-box; }
+
+a { color: inherit; text-decoration: none; }
+
+@layer components {
+  .card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 0.75rem;
+  }
+  .chip {
+    @apply inline-flex items-center px-2 py-0.5 rounded text-xs font-medium;
+    background: var(--bg-soft);
+    border: 1px solid var(--border);
+  }
+}
+
+/* Tier glow */
+.tier-Bronze   { color: #CD7F32; }
+.tier-Silver   { color: #D5D5DD; }
+.tier-Gold     { color: #FFD27A; }
+.tier-Diamond  { color: #B9F2FF; }
+.tier-Legendary{ color: #FF9466; }
+
+.ring-Bronze   { box-shadow: 0 0 0 1px #CD7F3266 inset; }
+.ring-Silver   { box-shadow: 0 0 0 1px #D5D5DD66 inset; }
+.ring-Gold     { box-shadow: 0 0 0 1px #FFD27A99 inset; }
+.ring-Diamond  { box-shadow: 0 0 0 1px #B9F2FFAA inset; }
+.ring-Legendary{ box-shadow: 0 0 0 1px #FF9466CC inset; }
+
+/* News article body */
+.news-body { line-height: 1.7; color: var(--text); font-size: 0.95rem; }
+.news-body h1, .news-body h2, .news-body h3, .news-body h4 {
+  font-weight: 700;
+  margin: 1.5rem 0 0.75rem;
+  color: #fff;
+}
+.news-body h1 { font-size: 1.5rem; }
+.news-body h2 { font-size: 1.3rem; }
+.news-body h3 { font-size: 1.15rem; color: var(--accent); }
+.news-body h4 { font-size: 1rem; }
+.news-body p { margin: 0.75rem 0; }
+.news-body strong { color: #fff; }
+.news-body ul, .news-body ol {
+  margin: 0.5rem 0 0.75rem;
+  padding-left: 1.5rem;
+}
+.news-body ul { list-style: disc; }
+.news-body ol { list-style: decimal; }
+.news-body li { margin: 0.25rem 0; }
+.news-body a { color: #FFD27A; text-decoration: underline; }
+.news-body a:hover { color: #fff; }
+.news-body img {
+  max-width: 100%;
+  border-radius: 0.5rem;
+  margin: 1rem auto;
+  display: block;
+}
+.news-body blockquote {
+  border-left: 3px solid var(--accent);
+  background: var(--bg-soft);
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  color: var(--text-dim);
+}
+.news-body figure { margin: 1rem 0; }
+.news-body iframe { max-width: 100%; }

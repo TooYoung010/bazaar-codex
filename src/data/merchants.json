@@ -1,0 +1,587 @@
+[
+  {
+    "id": "dc12f4bd-6c33-41f0-b7ad-d62a0be09a47",
+    "name": "Aila",
+    "description": "Sells Weapons",
+    "heroes": [
+      "Common"
+    ],
+    "filters": {
+      "tagStates": {
+        "Weapon": "on"
+      }
+    }
+  },
+  {
+    "id": "705c0d8e-8513-49ce-82e8-81782cdac316",
+    "name": "Ande",
+    "description": "Sells Small items",
+    "heroes": [
+      "Common"
+    ],
+    "filters": {
+      "sizes": [
+        "Small"
+      ]
+    }
+  },
+  {
+    "id": "8f0aea10-9894-4ded-a726-72b23142589c",
+    "name": "Barkun",
+    "description": "Sells Medium and Large items. Buys your Small items at +{aura.3} Value.",
+    "heroes": [
+      "Common"
+    ],
+    "filters": {
+      "sizes": [
+        "Medium",
+        "Large"
+      ]
+    }
+  },
+  {
+    "id": "b1288f12-2cf9-4473-a43e-4dd521703990",
+    "name": "Chronos",
+    "description": "Sells Haste items.",
+    "heroes": [
+      "Common"
+    ],
+    "filters": {
+      "tagStates": {
+        "Haste": "on",
+        "HasteReference": "on"
+      }
+    }
+  },
+  {
+    "id": "ef25f92c-484a-48de-b6de-8fc6429823ca",
+    "name": "Cobweb",
+    "description": "Sells Slow items.",
+    "heroes": [
+      "Common"
+    ],
+    "filters": {
+      "tagStates": {
+        "Slow": "on",
+        "SlowReference": "on"
+      }
+    }
+  },
+  {
+    "id": "816e6ba0-8f5f-412e-9756-8e1901dd9d49",
+    "name": "Colt",
+    "description": "Sells Ammo items",
+    "heroes": [
+      "Vanessa"
+    ],
+    "filters": {
+      "tagStates": {
+        "Ammo": "on"
+      },
+      "heroes": [
+        "Vanessa"
+      ]
+    }
+  },
+  {
+    "id": "c6cffe25-8e94-4a7b-a821-3e3c7093333b",
+    "name": "Curio",
+    "description": "Sells Bronze-tier Neutral items.",
+    "heroes": [
+      "Common"
+    ],
+    "filters": {
+      "tiers": [
+        "Bronze"
+      ],
+      "heroes": [
+        "Common"
+      ]
+    }
+  },
+  {
+    "id": "4580fb31-b2ea-4f9b-9ab9-2979602f83d8",
+    "name": "Dooley",
+    "description": "Purchase an item from this Hero  ",
+    "heroes": [
+      "Stelle",
+      "Vanessa",
+      "Mak",
+      "Pygmalien",
+      "Jules"
+    ],
+    "filters": {
+      "heroes": [
+        "Dooley"
+      ]
+    }
+  },
+  {
+    "id": "0ff275f7-60ef-4428-acb6-1a138d03152d",
+    "name": "Eli",
+    "description": "Sells Potions",
+    "heroes": [
+      "Mak"
+    ],
+    "filters": {
+      "tagStates": {
+        "Potion": "on"
+      },
+      "heroes": [
+        "Mak"
+      ]
+    }
+  },
+  {
+    "id": "7bd967dd-4631-4252-bdff-ee0bd5e3ddb7",
+    "name": "Flex",
+    "description": "Sells Max Health items.",
+    "heroes": [
+      "Pygmalien"
+    ],
+    "filters": {
+      "tagStates": {
+        "Health": "on",
+        "HealthReference": "on"
+      },
+      "heroes": [
+        "Pygmalien"
+      ]
+    }
+  },
+  {
+    "id": "c246ee53-51ea-40c1-ac2f-71435e179531",
+    "name": "Freiya",
+    "description": "Sells Freeze items.",
+    "heroes": [
+      "Common"
+    ],
+    "filters": {
+      "tagStates": {
+        "Freeze": "on",
+        "FreezeReference": "on"
+      }
+    }
+  },
+  {
+    "id": "9fc8b5a3-f522-4999-b310-26a0fadc7708",
+    "name": "Gaseo",
+    "description": "Sells Apparel from any Hero",
+    "heroes": [
+      "Common"
+    ],
+    "filters": {
+      "tagStates": {
+        "Apparel": "on"
+      },
+      "heroes": [
+        "Vanessa",
+        "Pygmalien",
+        "Dooley",
+        "Mak",
+        "Common"
+      ]
+    }
+  },
+  {
+    "id": "1f72700a-fe11-4792-8a47-9e52b9387f29",
+    "name": "Goldie",
+    "description": "Sells Gold-tier items",
+    "heroes": [
+      "Common"
+    ],
+    "filters": {}
+  },
+  {
+    "id": "43dbd6ed-6989-4ae4-acdc-f8bfcb8a008f",
+    "name": "Hef",
+    "description": "Sells Burn items.",
+    "heroes": [
+      "Common"
+    ],
+    "filters": {
+      "tagStates": {
+        "Burn": "on",
+        "BurnReference": "on"
+      }
+    }
+  },
+  {
+    "id": "2708055d-a8be-4c2f-a8d6-574e884a254e",
+    "name": "Herma",
+    "description": "Sells Heal and Regen items",
+    "heroes": [
+      "Pygmalien",
+      "Mak",
+      "Jules"
+    ],
+    "filters": {
+      "tagStates": {
+        "Regen": "on",
+        "RegenReference": "on",
+        "Heal": "on",
+        "HealReference": "on",
+        "Health": "on",
+        "HealthReference": "on"
+      },
+      "heroes": [
+        "Pygmalien",
+        "Mak"
+      ]
+    }
+  },
+  {
+    "id": "85db60ee-3619-4e39-bfb2-2f4ac56f172b",
+    "name": "Jay Jay",
+    "description": "Sells items.",
+    "heroes": [
+      "Common"
+    ],
+    "filters": {}
+  },
+  {
+    "id": "7fdc233f-b81f-4216-a646-4c807c2240da",
+    "name": "Jules",
+    "description": "Purchase an item from this Hero  ",
+    "heroes": [
+      "Stelle",
+      "Dooley",
+      "Mak",
+      "Pygmalien",
+      "Vanessa"
+    ],
+    "filters": {
+      "heroes": [
+        "Jules"
+      ]
+    }
+  },
+  {
+    "id": "a4fa13f8-6beb-4b6c-839b-60af167628d9",
+    "name": "Kev's Armory",
+    "description": "Sells Health and Shield items",
+    "heroes": [
+      "Dooley",
+      "Vanessa",
+      "Pygmalien",
+      "Jules",
+      "Stelle"
+    ],
+    "filters": {
+      "tagStates": {
+        "Health": "on",
+        "HealthReference": "on",
+        "Shield": "on",
+        "ShieldReference": "on"
+      }
+    }
+  },
+  {
+    "id": "5b7c5fc4-c942-44fe-9ca8-726dc36a2ad6",
+    "name": "Kina",
+    "description": "Sells non-Weapon items.",
+    "heroes": [
+      "Common"
+    ],
+    "filters": {
+      "tagStates": {
+        "Weapon": "off"
+      },
+      "isMatchAnyTag": false
+    }
+  },
+  {
+    "id": "2745a661-095c-44a5-bb6e-8dc76e07bda2",
+    "name": "Knightshade",
+    "description": "Sells Poison items.",
+    "heroes": [
+      "Common"
+    ],
+    "filters": {
+      "tagStates": {
+        "Poison": "on",
+        "PoisonReference": "on"
+      }
+    }
+  },
+  {
+    "id": "892de564-d894-4e07-ab21-959e16e8cdf8",
+    "name": "Luxe",
+    "description": "Sells Diamond-tier items",
+    "heroes": [
+      "Common"
+    ],
+    "filters": {}
+  },
+  {
+    "id": "4475cff5-6105-4f4a-978c-b282e36173eb",
+    "name": "Mak",
+    "description": "Purchase an item from this Hero  ",
+    "heroes": [
+      "Stelle",
+      "Dooley",
+      "Vanessa",
+      "Pygmalien",
+      "Jules"
+    ],
+    "filters": {
+      "heroes": [
+        "Mak"
+      ]
+    }
+  },
+  {
+    "id": "b8f55bb0-536e-4d5f-a328-d38f88c6d479",
+    "name": "Midsworth",
+    "description": "Sells Small and Large items. Buys your Medium items at +{aura.3} value.",
+    "heroes": [
+      "Common"
+    ],
+    "filters": {
+      "sizes": [
+        "Small",
+        "Large"
+      ]
+    }
+  },
+  {
+    "id": "912c8b09-3b76-4aa1-8e21-245e0dfb5046",
+    "name": "Mittel",
+    "description": "Sells Medium items",
+    "heroes": [
+      "Common"
+    ],
+    "filters": {
+      "sizes": [
+        "Medium"
+      ]
+    }
+  },
+  {
+    "id": "e30d8bef-5bea-4e95-b4c2-e29e17325a82",
+    "name": "Mr. Morland",
+    "description": "Sells Property items",
+    "heroes": [
+      "Pygmalien"
+    ],
+    "filters": {
+      "tagStates": {
+        "Property": "on"
+      },
+      "heroes": [
+        "Pygmalien"
+      ]
+    }
+  },
+  {
+    "id": "1a21931f-6183-4251-914b-c8f83dc58a30",
+    "name": "Nautica",
+    "description": "Sells Aquatic items",
+    "heroes": [
+      "Vanessa"
+    ],
+    "filters": {
+      "tagStates": {
+        "Aquatic": "on"
+      },
+      "heroes": [
+        "Vanessa"
+      ]
+    }
+  },
+  {
+    "id": "d3727a3a-3dd2-4ea7-a396-515e2c41c1b0",
+    "name": "Orion",
+    "description": "Sells Tools",
+    "heroes": [
+      "Common"
+    ],
+    "filters": {
+      "tagStates": {
+        "Tool": "on"
+      }
+    }
+  },
+  {
+    "id": "065f6793-8607-4f02-abfe-db6afb221ab2",
+    "name": "Pol",
+    "description": "Sells Large items",
+    "heroes": [
+      "Common"
+    ],
+    "filters": {
+      "sizes": [
+        "Large"
+      ]
+    }
+  },
+  {
+    "id": "bcdaa6d4-9057-4ea1-8110-a2dae217c55f",
+    "name": "Prospero",
+    "description": "Sells Economic items",
+    "heroes": [
+      "Pygmalien"
+    ],
+    "filters": {
+      "tagStates": {
+        "EconomyReference": "on",
+        "Value": "on",
+        "Gold": "on"
+      },
+      "heroes": [
+        "Pygmalien"
+      ]
+    }
+  },
+  {
+    "id": "f9074804-1812-445a-8688-b8c86f9c7711",
+    "name": "Pygmalien",
+    "description": "Purchase an item from this Hero  ",
+    "heroes": [
+      "Stelle",
+      "Dooley",
+      "Mak",
+      "Vanessa",
+      "Jules"
+    ],
+    "filters": {
+      "heroes": [
+        "Pygmalien"
+      ]
+    }
+  },
+  {
+    "id": "323e2c05-f077-4774-84a5-9e89d8d1c9b9",
+    "name": "Quixel",
+    "description": "Sells Small and Medium items. Buys your Large items at +{aura.3} value.",
+    "heroes": [
+      "Common"
+    ],
+    "filters": {
+      "sizes": [
+        "Small",
+        "Medium"
+      ]
+    }
+  },
+  {
+    "id": "b690812d-108b-49ce-82f3-e1a41379022c",
+    "name": "Serafina",
+    "description": "Sells Enchanted items",
+    "heroes": [
+      "Common"
+    ],
+    "filters": {}
+  },
+  {
+    "id": "ec81a27c-590c-43a1-a353-804a23b5e5d9",
+    "name": "Silvia",
+    "description": "Sells Silver-tier items",
+    "heroes": [
+      "Common"
+    ],
+    "filters": {}
+  },
+  {
+    "id": "e48b3243-1e7e-4a97-bf4f-0699fd0b4616",
+    "name": "Stelle",
+    "description": "Purchase an item from this Hero  ",
+    "heroes": [
+      "Vanessa",
+      "Dooley",
+      "Mak",
+      "Pygmalien",
+      "Jules"
+    ],
+    "filters": {
+      "heroes": [
+        "Stelle"
+      ]
+    }
+  },
+  {
+    "id": "22bb0004-5131-4588-a567-03ee3c96003b",
+    "name": "Tatiana",
+    "description": "Sells Toys from any Hero",
+    "heroes": [
+      "Common"
+    ],
+    "filters": {
+      "tagStates": {
+        "Toy": "on"
+      },
+      "heroes": [
+        "Vanessa",
+        "Pygmalien",
+        "Dooley",
+        "Mak",
+        "Common"
+      ]
+    }
+  },
+  {
+    "id": "b1b1f445-e625-4397-b4e2-ee4feeb729fa",
+    "name": "Tinker",
+    "description": "Sells Friend items",
+    "heroes": [
+      "Dooley"
+    ],
+    "filters": {
+      "tagStates": {
+        "Friend": "on"
+      }
+    }
+  },
+  {
+    "id": "3e871bbb-fb25-417f-8643-cb43456c3fc7",
+    "name": "Tok's Clocks",
+    "description": "Sells Haste, Slow and Cooldown items.",
+    "heroes": [
+      "Dooley",
+      "Vanessa",
+      "Mak",
+      "Jules",
+      "Stelle"
+    ],
+    "filters": {
+      "tagStates": {
+        "Haste": "on",
+        "HasteReference": "on",
+        "Slow": "on",
+        "SlowReference": "on",
+        "Cooldown": "on"
+      },
+      "heroes": [
+        "Vanessa",
+        "Dooley",
+        "Mak"
+      ]
+    }
+  },
+  {
+    "id": "e3b894b0-a078-4b1d-8793-ac6459a8361a",
+    "name": "Valpak",
+    "description": "Sells items. Always sells discounted items.",
+    "heroes": [
+      "Common"
+    ],
+    "filters": {}
+  },
+  {
+    "id": "580ba494-a852-4d80-a82d-5cd66fcfd2f3",
+    "name": "Vanessa",
+    "description": "Purchase an item from this Hero",
+    "heroes": [
+      "Stelle",
+      "Dooley",
+      "Mak",
+      "Pygmalien",
+      "Jules"
+    ],
+    "filters": {
+      "heroes": [
+        "Vanessa"
+      ]
+    }
+  }
+]

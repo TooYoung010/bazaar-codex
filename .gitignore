@@ -1,0 +1,15 @@
+node_modules
+.next
+out
+.env*.local
+*.tsbuildinfo
+data/raw
+
+# logs
+.build.log
+.dev.log
+*.log
+
+# OS
+.DS_Store
+Thumbs.db

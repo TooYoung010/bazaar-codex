@@ -1,0 +1,66 @@
+[
+  {
+    "key": "vanessa",
+    "id": "Vanessa",
+    "name": "凡妮莎",
+    "nameEn": "Vanessa",
+    "title": "海盗",
+    "itemCount": 139
+  },
+  {
+    "key": "dooley",
+    "id": "Dooley",
+    "name": "杜利",
+    "nameEn": "Dooley",
+    "title": "机器人",
+    "itemCount": 138
+  },
+  {
+    "key": "pygmalien",
+    "id": "Pygmalien",
+    "name": "皮格马利安",
+    "nameEn": "Pygmalien",
+    "title": "雕塑师",
+    "itemCount": 151
+  },
+  {
+    "key": "mak",
+    "id": "Mak",
+    "name": "马克",
+    "nameEn": "Mak",
+    "title": "医生",
+    "itemCount": 135
+  },
+  {
+    "key": "jules",
+    "id": "Jules",
+    "name": "朱尔斯",
+    "nameEn": "Jules",
+    "title": "商人",
+    "itemCount": 116
+  },
+  {
+    "key": "stelle",
+    "id": "Stelle",
+    "name": "斯黛拉",
+    "nameEn": "Stelle",
+    "title": "星河",
+    "itemCount": 118
+  },
+  {
+    "key": "karnok",
+    "id": "Karnok",
+    "name": "卡诺克",
+    "nameEn": "Karnok",
+    "title": "猎人",
+    "itemCount": 103
+  },
+  {
+    "key": "common",
+    "id": "Common",
+    "name": "中立",
+    "nameEn": "Common",
+    "title": "",
+    "itemCount": 143
+  }
+]
