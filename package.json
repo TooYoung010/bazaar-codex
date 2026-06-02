@@ -8,7 +8,13 @@
     "start": "next start",
     "lint": "next lint",
     "data:fetch": "node scripts/fetch-data.mjs",
-    "data:transform": "node scripts/transform-data.mjs"
+    "data:fetch-builds": "node scripts/fetch-builds.mjs",
+    "data:fetch-forge": "node scripts/fetch-forge.mjs",
+    "data:fetch-news": "node scripts/fetch-news.mjs",
+    "data:infer-extras": "node scripts/infer-extras.mjs",
+    "data:transform": "node scripts/transform-data.mjs",
+    "data:transform-builds": "node scripts/transform-builds.mjs",
+    "data:refresh": "npm run data:fetch && npm run data:fetch-builds && npm run data:fetch-forge && npm run data:fetch-news && npm run data:infer-extras && npm run data:transform && npm run data:transform-builds"
   },
   "dependencies": {
     "fuse.js": "7.0.0",

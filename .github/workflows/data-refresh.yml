@@ -1,0 +1,67 @@
+name: 🔄 Refresh game data
+
+# 自动从所有数据源拉取最新内容并提交：
+#   - howbazaar.gg API（物品/技能/商店）
+#   - bazaarplusplus.com BPP 字典（中文翻译）
+#   - bazaar-builds.net WordPress（历史牌组）
+#   - bazaarforge.gg Supabase（活跃牌组）
+# 触发方式：每天 1:00 UTC（北京时间 9:00）+ GitHub 网页手动触发
+# 如果 src/data 有变化，会自动 commit + push 到 main，
+# Vercel 检测到 push 后会自动重新部署。
+
+on:
+  schedule:
+    # 每天北京时间 9:00 跑一次（cron 用 UTC，9:00 - 8h = 1:00 UTC）
+    - cron: '0 1 * * *'
+  workflow_dispatch:  # 允许从 GitHub Actions 页面手动点 "Run workflow"
+
+permissions:
+  contents: write   # 需要 push commits 回仓库
+
+jobs:
+  refresh:
+    name: Pull from data sources & rebuild
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci --no-audit --no-fund
+
+      - name: Run full data refresh pipeline
+        run: npm run data:refresh
+
+      - name: Show changed files
+        run: |
+          echo "::group::Changed files"
+          git status --short
+          echo "::endgroup::"
+          echo "::group::Diff stats"
+          git diff --stat
+          echo "::endgroup::"
+
+      - name: Commit & push if changed
+        run: |
+          if [[ -z "$(git status --porcelain src/data)" ]]; then
+            echo "✅ No data changes, skip commit."
+            exit 0
+          fi
+          git config user.name  "bazaar-codex-bot"
+          git config user.email "actions@github.com"
+          git add src/data
+          # Build a concise commit message with item / build counts
+          ITEMS=$(node -e "console.log(require('./src/data/items.json').length)")
+          BUILDS=$(node -e "console.log(require('./src/data/builds.json').length)")
+          DATE=$(date -u '+%Y-%m-%d')
+          git commit -m "chore(data): auto-refresh ${DATE} (items=${ITEMS}, builds=${BUILDS})"
+          git push origin HEAD:main
+          echo "🚀 Pushed updated data to main, Vercel will redeploy."
